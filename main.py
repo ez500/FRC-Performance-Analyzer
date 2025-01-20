@@ -6,7 +6,7 @@ import suitability_index_integration as sii
 def main():
     scouted_data = sdi.populate_scouted_data()
     statbotics_data = sbdi.get_statbotics_stats_from_scouting_data(scouted_data)
-    suitability_indices = sii.calculate_suitability_index(scouted_data)
+    suitability_indices = sii.calculate_suitability_index(scouted_data, statbotics_data)
 
     print(statbotics_data)
 
