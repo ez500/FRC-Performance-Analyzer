@@ -4,7 +4,7 @@ import csv
 def check_validity(row) -> bool:
     return row[0] == 'Team' and row[1] == 'Coral'
 
-
+# TODO JSON READER INSTEAD OF CSV, WITH STRUCTURE SENT BY GERSE
 def populate_scouted_data():
     data = {}
     with open('data.csv', newline='') as file:
